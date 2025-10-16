@@ -38,3 +38,8 @@ export const getProductosByCategoria = async (categoria: string) => {
   const res = await axios.get(`${API_URL}/categoria/${categoria}`);
   return res.data;
 };
+
+export const getCategorias = async () => {
+  const res = await axios.get("http://localhost:3000/categorias");
+  return res.data;
+};

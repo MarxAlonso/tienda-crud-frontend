@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import ProductosPage from "./pages/ProductosPage";
-{/*import EditarProductoPage from "./pages/EditarProductoPage";*/}
+import FiltrarProductoPage from "./pages/FiltrarProductoPage";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/productos" element={<ProductosPage />} />
-          {/*<Route path="/productos/editar/:id" element={<EditarProductoPage />} /> */}
+          <Route path="/filtrar" element={<FiltrarProductoPage />} />
         </Routes>
       </main>
     </Router>
