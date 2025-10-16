@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
-import { Producto } from "../models/Producto";
+interface Producto {
+  id?: number;
+  nombre: string;
+  precio: number;
+  stock: number;
+  categoria: string;
+}
 
 interface Props {
   onSubmit: (producto: Producto) => void;

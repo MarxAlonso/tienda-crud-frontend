@@ -1,4 +1,10 @@
-import { Producto } from "../models/Producto";
+interface Producto {
+  id?: number;
+  nombre: string;
+  precio: number;
+  stock: number;
+  categoria: string;
+}
 
 interface Props {
   productos: Producto[];

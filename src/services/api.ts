@@ -1,5 +1,11 @@
 import axios from "axios";
-import { Producto } from "../models/Producto";
+interface Producto {
+  id?: number;
+  nombre: string;
+  precio: number;
+  stock: number;
+  categoria: string;
+}
 
 const API_URL = "http://localhost:3000/productos";
 
